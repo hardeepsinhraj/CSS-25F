@@ -133,7 +133,7 @@ textarea {
   
   .container {
   /* STEP 7: Set an element as the grid container with display: grid; */
-    
+    display: grid;
   /* STEP 8: Define the columns for the grid with grid-template-columns - use a space-separated list of widths */
     
   /* STEP 9: Define the rows for the grid with grid-template-rows - use a space-separated list of widths or auto */
