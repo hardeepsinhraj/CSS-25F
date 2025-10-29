@@ -28,49 +28,53 @@
 			<!-- STEP 6: Create a DIV for another row -->
 			<div class="row">
 				<!-- STEP 7: Set the NAV as a column (span of 4) and add a unique id -->
-				<nav id="pageNav" class="col-4">
-				<!-- STEP 9: Add class="sticky-top" to the UL element below so it stays on the page while scrolling -->
-					<ul class="sticky-top">
-						<li><a href="#b1" title="">Fresh Cheeses</a>
-							<ul>
-								<li><a href="#b1c1" title="">Cottage Cheese</a></li>
-								<li><a href="#b1c2" title="">Cream Cheese</a></li>
-								<li><a href="#b1c3" title="">Mozzarella</a></li>
-								<li><a href="#b1c4" title="">Ricotta</a></li>
-							</ul>
-						</li>
-						<li><a href="#b2" title="">Soft Cheeses</a>
-							<ul>
-								<li><a href="#b2c1" title="">Camembert</a></li>
-								<li><a href="#b2c2" title="">Coulommieres</a></li>
-								<li><a href="#b2c3" title="">Brie</a></li>
-								<li><a href="#b2c4" title="">Munster</a></li>
-								<li><a href="#b2c5" title="">Pont-l’Évèque</a></li>
-							</ul>
-						</li>
-						<li><a href="#b3" title="">Pressed Cheeses</a>
-							<ul>
-								<li><a href="#b3c1" title="">Emmenthal</a></li>
-								<li><a href="#b3c2" title="">Gruyère</a></li>
-								<li><a href="#b3c3" title="">Jarlesburg</a></li>
-								<li><a href="#b3c4" title="">Parmesan</a></li>
-								<li><a href="#b3c5" title="">Romano</a></li>
-							</ul>
-						</li>
-						<li><a href="#b4" title="">Blue-Veined Cheeses</a>
-							<ul>
-								<li><a href="#b4c1" title="">Danish Blue</a></li>
-								<li><a href="#b4c2" title="">Gorgonzola</a></li>
-								<li><a href="#b4c3" title="">Roquefort</a></li>
-								<li><a href="#b4c4" title="">Stilton</a></li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
+			<nav id="pageNav" class="col-4">
+  <div class="list-group sticky-top" style="max-height: 80vh; overflow-y:auto;">
+    <!-- Fresh Cheeses -->
+    <a href="#b1" class="list-group-item list-group-item-action">Fresh Cheeses</a>
+    <div class="list-group ms-3">
+      <a href="#b1c1" class="list-group-item list-group-item-action">Cottage Cheese</a>
+      <a href="#b1c2" class="list-group-item list-group-item-action">Cream Cheese</a>
+      <a href="#b1c3" class="list-group-item list-group-item-action">Mozzarella</a>
+      <a href="#b1c4" class="list-group-item list-group-item-action">Ricotta</a>
+    </div>
 
-      <main class="col-8">
+    <!-- Soft Cheeses -->
+    <a href="#b2" class="list-group-item list-group-item-action">Soft Cheeses</a>
+    <div class="list-group ms-3">
+      <a href="#b2c1" class="list-group-item list-group-item-action">Camembert</a>
+      <a href="#b2c2" class="list-group-item list-group-item-action">Coulommieres</a>
+      <a href="#b2c3" class="list-group-item list-group-item-action">Brie</a>
+      <a href="#b2c4" class="list-group-item list-group-item-action">Munster</a>
+      <a href="#b2c5" class="list-group-item list-group-item-action">Pont-l’Évèque</a>
+    </div>
+
+    <!-- Pressed Cheeses -->
+    <a href="#b3" class="list-group-item list-group-item-action">Pressed Cheeses</a>
+    <div class="list-group ms-3">
+      <a href="#b3c1" class="list-group-item list-group-item-action">Emmenthal</a>
+      <a href="#b3c2" class="list-group-item list-group-item-action">Gruyère</a>
+      <a href="#b3c3" class="list-group-item list-group-item-action">Jarlesburg</a>
+      <a href="#b3c4" class="list-group-item list-group-item-action">Parmesan</a>
+      <a href="#b3c5" class="list-group-item list-group-item-action">Romano</a>
+    </div>
+
+    <!-- Blue-Veined Cheeses -->
+    <a href="#b4" class="list-group-item list-group-item-action">Blue-Veined Cheeses</a>
+    <div class="list-group ms-3">
+      <a href="#b4c1" class="list-group-item list-group-item-action">Danish Blue</a>
+      <a href="#b4c2" class="list-group-item list-group-item-action">Gorgonzola</a>
+      <a href="#b4c3" class="list-group-item list-group-item-action">Roquefort</a>
+      <a href="#b4c4" class="list-group-item list-group-item-action">Stilton</a>
+    </div>
+  </div>
+</nav>
+
+<!-- STEP 8: Set the MAIN as a column as well (span of 8) -->
+		<main class="col-8">
         <section>
-          <h2>Cheese is Awesome</h2>
+			<!-- Thanks to http://www.cheeseipsum.co.uk/ -->
+			<h2>Cheese is Awesome</h2>
           <p>Cream cheese monterey jack chalk and cheese. Hard cheese stinking bishop mozzarella blue castello macaroni cheese when the cheese comes out everybody's happy roquefort roquefort. St. agur blue cheese parmesan cheese slices roquefort stilton hard cheese when the cheese comes out everybody's happy hard cheese. Babybel mascarpone.</p>
         </section>
 
@@ -79,96 +83,105 @@
 
           <!-- Fresh Cheeses -->
           <section class="accordion-item">
-            <h2 class="accordion-header" id="headingFresh">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFresh" aria-expanded="true" aria-controls="collapseFresh">
+            <h2 class="accordion-header" id="b1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
                 Fresh Cheeses
               </button>
             </h2>
-            <div id="collapseFresh" class="accordion-collapse collapse show" aria-labelledby="headingFresh" data-bs-parent="#cheeseAccordion">
+            <div id="collapse1" class="accordion-collapse collapse show" >
               <div class="accordion-body">
                 <img src="images/food-cheese-stinky.png" class="float-end ms-3 mb-3" alt="Cheese" height="200" width="250">
                 <p>Hard cheese fromage frais caerphilly. Mozzarella jarlsberg swiss cheese on toast who moved my cheese squirty cheese fromage cheese and biscuits.</p>
-                <h3>Cottage Cheese</h3>
+                <h3 id="b1c1">Cottage Cheese</h3>
                 <p>Roquefort smelly cheese cut the cheese. Pepper jack paneer st. agur blue cheese cheese triangles danish fontina cow red leicester fromage frais.</p>
-                <h3>Cream Cheese</h3>
+                <h3 id="b1c2">Cream Cheese</h3>
                 <p>Smelly cheese port-salut rubber cheese. Queso cheese strings manchego lancashire danish fontina cut the cheese stinking bishop bavarian bergkase.</p>
-                <h3>Mozzarella</h3>
+                <h3 id="b1c3">Mozzarella</h3>
                 <p>Squirty cheese squirty cheese cheese on toast. Cauliflower cheese cow halloumi brie hard cheese monterey jack camembert de normandie.</p>
-                <h3>Ricotta</h3>
+                <h3 id="b1c4">Ricotta</h3>
                 <p>Roquefort gouda everyone loves. Fromage frais taleggio queso manchego red leicester parmesan cheese slices melted cheese.</p>
               </div>
             </div>
           </section>
-
+		  <p><a href="#">Back to top</a></p>
           <!-- Soft Cheeses -->
           <section class="accordion-item">
-            <h2 class="accordion-header" id="headingSoft">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSoft" aria-expanded="false" aria-controls="collapseSoft">
+            <h2 class="accordion-header" id="b2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" >
                 Soft Cheeses
               </button>
             </h2>
-            <div id="collapseSoft" class="accordion-collapse collapse" aria-labelledby="headingSoft" data-bs-parent="#cheeseAccordion">
+            <div id="collapse2" class="accordion-collapse collapse">
               <div class="accordion-body">
                 <img src="images/food-cheese-very-stinky.png" class="float-end ms-3 mb-3" alt="Soft Cheese" height="200" width="250">
                 <p>The big cheese bavarian bergkase say cheese. Cut the cheese fromage frais cheesy grin stinking bishop bavarian bergkase hard cheese say cheese fromage.</p>
-                <h3>Camembert</h3>
+                <h3 id="b2c1">Camembert</h3>
                 <p>Cottage cheese edam cheese on toast. Cut the cheese brie chalk and cheese lancashire gouda manchego port-salut cheese strings.</p>
-                <h3>Coulommieres</h3>
+                <h3 id="b2c2">Coulommieres</h3>
                 <p>Cheese triangles fondue camembert de normandie. Manchego fromage frais mascarpone chalk and cheese cut the cheese cheese slices.</p>
-                <h3>Brie</h3>
+                <h3 id="b2c3">Brie</h3>
                 <p>Croque monsieur dolcelatte rubber cheese. Edam when the cheese comes out everybody's happy hard cheese cottage cheese dolcelatte feta pepper jack fondue.</p>
-                <h3>Munster</h3>
+                <h3 id="b2c4">Munster</h3>
                 <p>Cheesy feet roquefort croque monsieur. Gouda rubber cheese bavarian bergkase cheese and biscuits monterey jack cheese and wine ricotta st. agur blue cheese.</p>
+				<h3 id="b2c5">Pont-l’Évèque</h3>
+				<p>Boursin macaroni cheese parmesan. Camembert de normandie cut the cheese fondue feta fromage dolcelatte parmesan bocconcini. Cheeseburger boursin cauliflower cheese halloumi when the cheese comes out everybody's happy stinking bishop gouda melted cheese. Manchego.</p>
+						
               </div>
             </div>
           </section>
-
+		  <p><a href="#">Back to top</a></p>
           <!-- Pressed Cheeses -->
           <section class="accordion-item">
-            <h2 class="accordion-header" id="headingPressed">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePressed" aria-expanded="false" aria-controls="collapsePressed">
+            <h2 class="accordion-header" id="b3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" >
                 Pressed Cheeses
               </button>
             </h2>
-            <div id="collapsePressed" class="accordion-collapse collapse" aria-labelledby="headingPressed" data-bs-parent="#cheeseAccordion">
+            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="headingPressed" data-bs-parent="#cheeseAccordion">
               <div class="accordion-body">
                 <img src="images/food-fancy-cheese.png" class="float-end ms-3 mb-3" alt="Pressed Cheese" height="200" width="250">
                 <p>Monterey jack stilton bocconcini. Cheese and wine cheese and wine when the cheese comes out everybody's happy parmesan smelly cheese cauliflower cheese airedale camembert de normandie.</p>
-                <h3>Emmenthal</h3>
+                <h3 id="b3c1">Emmenthal</h3>
                 <p>Croque monsieur pepper jack cheeseburger. Edam goat lancashire the big cheese swiss cow cow melted cheese.</p>
-                <h3>Gruyère</h3>
+                <h3 id="b3c2">Gruyère</h3>
                 <p>Fromage frais jarlsberg bocconcini. Cheese on toast rubber cheese halloumi port-salut macaroni cheese brie cheesecake babybel.</p>
-                <h3>Parmesan</h3>
+                <h3 id="b3c3">Jarlesburg</h3>
+				<p>Mascarpone brie danish fontina. Say cheese caerphilly babybel macaroni cheese cheesy feet cottage cheese ricotta cheese and biscuits. Roquefort cheese and wine danish fontina swiss pepper jack fromage say cheese melted cheese. Say cheese squirty cheese.</p>
+				<h3 id="b3c4">Parmesan</h3>
                 <p>Cheese slices camembert de normandie cheese strings. Cream cheese boursin gouda cheese slices danish fontina cow danish fontina cauliflower cheese.</p>
+				<h3 id="b3c5">Romano</h3>
+				<p>In scelerisque sit amet mi non scelerisque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut dictum tincidunt dolor, accumsan pellentesque tortor fringilla at. Praesent hendrerit, nunc sit amet tristique pretium, ex massa fringilla leo, gravida consectetur sapien sapien eget quam. Suspendisse placerat et est vitae aliquet. Maecenas imperdiet elementum lacinia. Aliquam vel feugiat nisi, id venenatis dui. Mauris tempor cursus gravida. Vivamus maximus ut purus nec auctor.</p>
+						
               </div>
             </div>
           </section>
-
+		<p><a href="#">Back to top</a></p>
           <!-- Blue-Veined Cheeses -->
           <section class="accordion-item">
-            <h2 class="accordion-header" id="headingBlue">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBlue" aria-expanded="false" aria-controls="collapseBlue">
+            <h2 class="accordion-header" id="b4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
                 Blue-Veined Cheeses
               </button>
             </h2>
-            <div id="collapseBlue" class="accordion-collapse collapse" aria-labelledby="headingBlue" data-bs-parent="#cheeseAccordion">
+            <div id="collapse4" class="accordion-collapse collapse" >
               <div class="accordion-body">
                 <img src="images/food-cheese-very-very-stinky.png" class="float-end ms-3 mb-3" alt="Blue Cheese" height="200" width="250">
-                <p>Fondue cheesecake cream cheese. Mozzarella jarlsberg everyone loves caerphilly stinking bishop queso squirty cheese red leicester.</p>
-                <h3>Danish Blue</h3>
-                <p>Blue castello danish fontina who moved my cheese. Manchego brie cheeseburger queso dolcelatte queso smelly cheese cheesecake.</p>
-                <h3>Gorgonzola</h3>
-                <p>Cheese on toast boursin feta. Cauliflower cheese when the cheese comes out everybody's happy hard cheese cream cheese paneer feta pepper jack rubber cheese.</p>
-                <h3>Roquefort</h3>
-                <p>Fromage danish fontina macaroni cheese. Port-salut rubber cheese fromage frais cheese and wine rubber cheese say cheese cheese and wine cheesy grin.</p>
-                <h3>Stilton</h3>
-                <p>When the cheese comes out everybody's happy croque monsieur goat. Fromage squirty cheese ricotta babybel when the cheese comes out everybody's happy.</p>
-              </div>
+                <p>Fondue cheesecake cream cheese. Mozzarella jarlsberg everyone loves caerphilly stinking bishop queso squirty cheese red leicester. Cheese triangles melted cheese dolcelatte gouda bavarian bergkase swiss cheesy grin roquefort. Babybel pepper jack croque monsieur.</p>
+						<h3 id="b4c1">Danish-Blue</h3>
+						<p>Blue castello danish fontina who moved my cheese. Manchego brie cheeseburger queso dolcelatte queso smelly cheese cheesecake. Everyone loves camembert de normandie pepper jack fondue jarlsberg parmesan babybel parmesan. Blue castello boursin cheesy feet mascarpone parmesan.</p>
+						<h3 id="b4c2">Gorgonzola</h3>
+						<p>Cheese on toast boursin feta. Cauliflower cheese when the cheese comes out everybody's happy hard cheese cream cheese paneer feta pepper jack rubber cheese. Taleggio dolcelatte rubber cheese mozzarella when the cheese comes out everybody's happy paneer squirty cheese say cheese. Everyone loves cheddar emmental emmental bavarian bergkase cheese and wine cream cheese fromage frais. Airedale caerphilly parmesan.</p>
+						<h3 id="b4c3">Roquefort</h3>
+						<p>Fromage danish fontina macaroni cheese. Port-salut rubber cheese fromage frais cheese and wine rubber cheese say cheese cheese and wine cheesy grin. Gouda emmental macaroni cheese blue castello swiss macaroni cheese manchego say cheese. Mascarpone everyone loves cheesecake mascarpone lancashire goat cheeseburger cheese slices. Say cheese macaroni cheese.</p>
+						<h3 id="b4c4">Stilton</h3>
+						<p>When the cheese comes out everybody's happy croque monsieur goat. Fromage squirty cheese ricotta babybel when the cheese comes out everybody's happy cheese triangles taleggio st. agur blue cheese. Say cheese cheesecake fondue melted cheese fondue cheesy grin rubber cheese ricotta. Cheesecake boursin halloumi.</p>
+						
+					</div>
             </div>
           </section>
-
+<p><a href="#">Back to top</a></p>
         </div>
-        <!-- 🧀 End of Accordion -->
+        <!--  End of Accordion -->
       </main>
 
       <footer class="col-12 mt-4">
@@ -180,7 +193,7 @@
     </div>
   </div>
 
-  <!-- Bootstrap JS -->
+  <!-- STEP 2: Get Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 </body>
