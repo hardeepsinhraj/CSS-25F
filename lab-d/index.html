@@ -25,20 +25,66 @@
         }
         p#rotate {
             background-color: orange;
-            
+            transform: rotate(10deg);
+        }
+        p#rotate:hover {
+            transform: rotate(45deg);
+            transition: transform 0.5s ease-in-out;
         }
         p#scale {
             background-color: purple;
+            transform: scale(1.2);
+        }
+        p#scale:hover {
+            transform: scale(1.5);
+            transition: transform 0.5s ease-in-out;
         }
         p#skew {
             background-color: limegreen;
+            transform: skew(10deg, 10deg);
+        }
+        p#skew:hover {
+            transform: skew(20deg, 20deg);
+            transition: transform 0.5s ease-in-out;
         }
         p#translate {
             background-color: hotpink;
+            transform: translate(10px, 10px);
+        }
+        p#translate:hover {
+            transform: translate(30px, 30px);
+            transition: transform 0.5s ease-in-out;
         }
         p#Animate {
             background-color: rgb(219, 60, 118);
+            position: relative;
+            animation-name: slidein;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
             
+        }
+        @keyframes slidein {
+            0% {
+                left: 20px;
+                
+            }
+            25% {
+                left: 40px;
+                background-color: greenyellow;
+            }
+            50% {
+                left: 80px;
+                background-color: fuchsia;
+            }
+            75% {
+                left: 100px;
+                background-color: black;
+            }
+            100% {
+                left: 120px;
+                background-color: red;
+            }
         }
     </style>
 </head>
