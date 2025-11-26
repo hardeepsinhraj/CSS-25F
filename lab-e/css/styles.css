@@ -1,0 +1,28 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+/*  Set the width of the SVG */
+svg{
+    border: 5px dotted grey;
+    width: 75%;
+    height: auto;
+}
+
+/*  Set up a transition for the bar */
+#barFill{
+    transition: all 0.5s;
+}
+
+/* Improve interactivity */
+svg:hover{
+    cursor: pointer;
+}
+
+/* Initial width set to 0 — JS will rewrite this */
+svg:active #barFill{
+    width: 0;
+}
+
+svg text{
+    font-family: 'Passion One', sans-serif;
+}
